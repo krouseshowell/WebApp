@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block title %}
+  Rose & Bramble - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+  <div class="image">
+    <img src="{% static 'images/blossom.jpg' %}" alt="Blackberry Blossoms", width="100%">
+    <h2>Rose & Bramble
+    </br> <span class="sub">My adventures in coding.</span></h2>
+  </div>
+{% endblock content %}
