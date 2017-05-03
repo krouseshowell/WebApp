@@ -10,13 +10,26 @@ header {
   width: 100%;
   z-index: 10;
   opacity: 0.5;
+  color: #F0DC93;
 }
-ul {
+
+nav {
   top: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+}
+h1 {
+  display: inline-block;
+  float: left;
+}
+ul {
   list-style-type: none;
+  display: inline-block;
+  float: right;
+  margin: 12px;
+
 }
 li{
   float: right;
