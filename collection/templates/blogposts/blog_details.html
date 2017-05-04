@@ -4,11 +4,9 @@
 {% endblock title %}
 
 {% block content %}
-<body>
-  <div class="blogpost">
-  <h3><time>{{blogpost.posted}}</time></br><a href="{% url 'blogpost_detail' slug=blogpost.slug %}">
-      {{blogpost.title}}</a></h3>
-    <p>{{blogpost.body}}</p>
-  </div>
-</body>
+  <h3> {{ blogpost.title }}</h3>
+  <p>{{ blogpost.body }}</p>
+  <a href="{% url 'edit_Blog' slug=blogpost.slug %}">
+    Edit me!
+  </a>
 {% endblock content %}
