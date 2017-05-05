@@ -1,8 +1,14 @@
 
 body {
-  background-color: #8A972B;
+  background-color: White;
   margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+
 }
+a {text-decoration: none;
+  color:#8A972B;
+ }
 header {
   position: fixed;
   background-color: #8A972B;
@@ -57,7 +63,7 @@ h2 {
   position: absolute;
   top: 10%;
   left; 0;
-  width: 100%;
+  width: 50%;
   color: #8A972B;
   padding: 5%;
   font-size: XX-Large;
@@ -68,4 +74,23 @@ h2 {
   font-size: medium;
   text-indent: 10px;
   margin-left:20px;
+}
+
+.blogpost{
+  margin:100px;
+
+}
+
+h3 {Font-size: 30pt;
+
+}
+
+time {
+  font-size: 10pt;
+  color: #CAC0B7;
+  margin-left: 2em;
+}
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16pt;
 }

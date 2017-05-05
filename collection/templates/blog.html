@@ -4,8 +4,11 @@
 {% endblock title %}
 
 {% block content %}
-  {% for blog in blogs %}
-  <h3>{{ Blogpost.title }}</h3>
-  <p>{{ Blogpost.body }}</p>
+  {% for blogpost in blogposts %}
+  <div class="blogpost">
+  <h3><time>{{blogpost.posted}}</time></br><a href="{% url 'blogpost_detail' slug=blogpost.slug %}">
+      {{blogpost.title}}</a></h3>
+    <p>{{blogpost.body}}</p>
+  </div>
   {% endfor %}
 {% endblock content %}

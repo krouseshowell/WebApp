@@ -3,15 +3,11 @@
 {% block title %}
   Rose & Bramble - {{ block.super }}
 {% endblock title %}
-{% block h1%}{% endblock%}
+{% block h1%}{% endblock %}
+{% block img%}<div class="image">
+  <img src="{% static 'images/blossom.jpg' %}" alt="Blackberry Blossoms", width="100%">
+  <h2>Rose & Bramble
+  </br> <span class="sub">My adventures in coding.</span></h2>
+</div>{% endblock %}
 {% block content %}
-  <div class="image">
-    <img src="{% static 'images/blossom.jpg' %}" alt="Blackberry Blossoms", width="100%">
-    <h2>Rose & Bramble
-    </br> <span class="sub">My adventures in coding.</span></h2>
-  </div>
-    {% for blogpost in blogposts %}
-    <h3> {{ blogpost.title }} </h3>
-    <p>{{ blogpost.body }} </br> {{blogpost.posted}}
-    {% endfor %}
 {% endblock content %}

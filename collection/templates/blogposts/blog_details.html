@@ -6,7 +6,11 @@
 {% block content %}
   <h3> {{ blogpost.title }}</h3>
   <p>{{ blogpost.body }}</p>
-  <a href="{% url 'edit_Blog' slug=blogpost.slug %}">
-    Edit me!
-  </a>
+  {% if user == blogpost.user %}
+    <p>
+        <a href="{% url 'edit_Blog' slug=blogpost.slug %}">
+          Edit me!
+        </a>
+      </p>
+    {% endif %}
 {% endblock content %}

@@ -5,6 +5,7 @@
   <title>{% block title %} My Project {% endblock title%}</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -16,9 +17,23 @@
         <li><a href="{% url 'blog' %}">Blog</a></li>
         <li><a href="{% url 'contact' %}">Contact</a></li>
         <li><a href="{% url 'resources' %}">Resources</a></li>
+        {% if user.is_authenticated %}
+        <li>
+          <a href="{% url 'auth_logout' %}">Logout</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="{% url 'auth_login' %}">Login</a>
+        <li>
+          <a href="{% url 'registration_register' %}">Register</a>
+        </li>
+        {% endif %}
       </ul>
     </nav>
   </header>
+  {%block img%}<div class="image">
+    <img src="{% static 'images/header.jpg' %}" alt="Header", width="100%">
+  </div>{%endblock%}
     {% block content%}{% endblock content %}
     {% block footer %}{% endblock footer%}
 
