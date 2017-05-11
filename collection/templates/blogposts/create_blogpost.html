@@ -3,9 +3,11 @@
   Create a Blogpost - {{ block.super }}
 {% endblock title %}
 {% block content %}
+<div class= "form">
   <h3> Create a Blogpost </h3>
   <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Submit" /></form>
+    <input class="button" type="submit" value="Submit"/></form>
+</div>
 {% endblock content %}

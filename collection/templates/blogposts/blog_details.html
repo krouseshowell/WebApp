@@ -4,7 +4,9 @@
 {% endblock title %}
 
 {% block content %}
-  <h3> {{ blogpost.title }}</h3>
+<div class="blogpost">
+<h3><time>{{blogpost.posted}}</time></br>
+    {{blogpost.title}}</h3>
   <p>{{ blogpost.body }}</p>
   {% if user == blogpost.user %}
     <p>
@@ -13,4 +15,5 @@
         </a>
       </p>
     {% endif %}
+
 {% endblock content %}

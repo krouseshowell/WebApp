@@ -9,6 +9,8 @@ body {
 a {text-decoration: none;
   color:#8A972B;
  }
+
+
 header {
   position: fixed;
   background-color: #8A972B;
@@ -17,6 +19,7 @@ header {
   z-index: 10;
   opacity: 0.5;
   color: #F0DC93;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 nav {
@@ -24,28 +27,30 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
+
 h1 {
   display: inline-block;
-  float: left;
+
 }
+
+
 ul {
   list-style-type: none;
-  display: inline-block;
   float: right;
   margin: 12px;
 
 }
-li{
-  float: right;
+li {
+  float: left;
 }
+
 li a {
-  display: block;
   color: #F0DC93;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: block;
 }
 
 li a:hover {
@@ -54,7 +59,6 @@ li a:hover {
 }
 .image {
   position: relative;
-  max width: 100%;
   height: auto;
   width: auto;
 }
@@ -62,7 +66,6 @@ li a:hover {
 h2 {
   position: absolute;
   top: 10%;
-  left; 0;
   width: 50%;
   color: #8A972B;
   padding: 5%;
@@ -81,7 +84,9 @@ h2 {
 
 }
 
+
 h3 {Font-size: 30pt;
+    color:#8A972B;
 
 }
 
@@ -93,4 +98,25 @@ time {
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16pt;
+}
+
+div.form{
+  margin: 100px;
+  color: #8A972B;
+
+}
+
+.button {
+    background-color: #8A972B;
+    border: none;
+    color: #F0DC93;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
 }

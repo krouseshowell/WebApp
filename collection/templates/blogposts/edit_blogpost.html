@@ -3,10 +3,12 @@
   Edit {{ blogpost.title}} - {{ block.super }}
 {% endblock title %}
 {% block content %}
-  <h3>Edit "{{ blogpost.title }}"</h3>
+  <div class= "form">
+  <h3>Edit</h3>
   <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <button class="button" type="submit">Submit</button>
   </form>
+</div>
 {% endblock %}
